@@ -101,8 +101,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                     ),
                   ),
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 70.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        0.0, 70.0, 0.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -150,8 +150,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                   unselectedLabelColor:
                                       FlutterFlowTheme.of(context)
                                           .secondaryText,
-                                  labelPadding: const EdgeInsetsDirectional.fromSTEB(
-                                      24.0, 0.0, 24.0, 0.0),
+                                  labelPadding:
+                                      const EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
@@ -174,7 +175,7 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                     [
                                       () async {},
                                       () async {
-                                        context.safePop();
+                                        //context.safePop();
                                       }
                                     ][i]();
                                   },
@@ -195,8 +196,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         0.0, 20.0, 0.0, 0.0),
                                                 child: TextFormField(
                                                   controller: _model
@@ -230,7 +232,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -241,7 +244,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -252,7 +256,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -263,7 +268,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -277,11 +283,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                         const Color(0xFFDDA15E),
                                                     contentPadding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                20.0,
-                                                                24.0,
-                                                                20.0,
-                                                                24.0),
+                                                            .fromSTEB(20.0,
+                                                            24.0, 20.0, 24.0),
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -299,8 +302,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         0.0, 12.0, 0.0, 0.0),
                                                 child: TextFormField(
                                                   controller: _model
@@ -335,7 +339,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             ),
                                                     enabledBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -346,7 +351,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     ),
                                                     focusedBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -357,7 +363,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     ),
                                                     errorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -368,7 +375,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     ),
                                                     focusedErrorBorder:
                                                         OutlineInputBorder(
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -382,11 +390,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                         const Color(0xFFDDA15E),
                                                     contentPadding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(
-                                                                20.0,
-                                                                24.0,
-                                                                20.0,
-                                                                24.0),
+                                                            .fromSTEB(20.0,
+                                                            24.0, 20.0, 24.0),
                                                     suffixIcon: InkWell(
                                                       onTap: () => setState(
                                                         () => _model
@@ -402,8 +407,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                                 .visibility_outlined
                                                             : Icons
                                                                 .visibility_off_outlined,
-                                                        color:
-                                                            const Color(0xFFE5E0E0),
+                                                        color: const Color(
+                                                            0xFFE5E0E0),
                                                         size: 20.0,
                                                       ),
                                                     ),
@@ -417,10 +422,12 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    1.0, 0.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        1.0, 0.0),
                                                 child: Padding(
-                                                  padding: const EdgeInsets.all(4.0),
+                                                  padding:
+                                                      const EdgeInsets.all(4.0),
                                                   child: FFButtonWidget(
                                                     onPressed: () {
                                                       print(
@@ -431,9 +438,11 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                       width: 185.0,
                                                       height: 40.0,
                                                       padding:
-                                                          const EdgeInsets.all(14.0),
+                                                          const EdgeInsets.all(
+                                                              14.0),
                                                       iconPadding:
-                                                          const EdgeInsets.all(0.0),
+                                                          const EdgeInsets.all(
+                                                              0.0),
                                                       color: FlutterFlowTheme
                                                               .of(context)
                                                           .secondaryBackground,
@@ -454,13 +463,15 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                                         .underline,
                                                               ),
                                                       elevation: 0.0,
-                                                      borderSide: const BorderSide(
+                                                      borderSide:
+                                                          const BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
                                                       ),
                                                       borderRadius:
-                                                          const BorderRadius.only(
+                                                          const BorderRadius
+                                                              .only(
                                                         bottomLeft:
                                                             Radius.circular(
                                                                 8.0),
@@ -479,8 +490,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, -1.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, -1.0),
                                                 child: FFButtonWidget(
                                                   onPressed: () {
                                                     print(
@@ -492,13 +504,14 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     height: 50.0,
                                                     padding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
                                                     iconPadding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
-                                                    color: const Color(0xFF283618),
+                                                            .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                    color:
+                                                        const Color(0xFF283618),
                                                     textStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -511,7 +524,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                                   .primaryBackground,
                                                             ),
                                                     elevation: 3.0,
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -522,7 +536,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsets.all(18.0),
+                                                padding:
+                                                    const EdgeInsets.all(18.0),
                                                 child: RichText(
                                                   textScaleFactor:
                                                       MediaQuery.of(context)
@@ -575,15 +590,17 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 0.0, 24.0, 0.0),
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              24.0, 0.0, 24.0, 0.0),
                                       child: SingleChildScrollView(
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 20.0, 0.0, 0.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -619,7 +636,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -629,7 +647,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -639,7 +658,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -649,7 +669,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -658,11 +679,12 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             33.0),
                                                   ),
                                                   filled: true,
-                                                  fillColor: const Color(0xFFDDA15E),
+                                                  fillColor:
+                                                      const Color(0xFFDDA15E),
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
                                                           .fromSTEB(20.0, 24.0,
-                                                              20.0, 24.0),
+                                                          20.0, 24.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -685,8 +707,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 20.0, 0.0, 0.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -720,7 +743,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -730,7 +754,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -740,7 +765,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -750,7 +776,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -759,11 +786,12 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             33.0),
                                                   ),
                                                   filled: true,
-                                                  fillColor: const Color(0xFFDDA15E),
+                                                  fillColor:
+                                                      const Color(0xFFDDA15E),
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
                                                           .fromSTEB(20.0, 24.0,
-                                                              20.0, 24.0),
+                                                          20.0, 24.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -774,8 +802,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 20.0, 0.0, 0.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -809,7 +838,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -819,7 +849,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -829,7 +860,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -839,7 +871,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -848,11 +881,12 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             33.0),
                                                   ),
                                                   filled: true,
-                                                  fillColor: const Color(0xFFDDA15E),
+                                                  fillColor:
+                                                      const Color(0xFFDDA15E),
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
                                                           .fromSTEB(20.0, 24.0,
-                                                              20.0, 24.0),
+                                                          20.0, 24.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -866,8 +900,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -902,7 +937,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -912,7 +948,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -922,7 +959,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -932,7 +970,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -941,11 +980,12 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             33.0),
                                                   ),
                                                   filled: true,
-                                                  fillColor: const Color(0xFFDDA15E),
+                                                  fillColor:
+                                                      const Color(0xFFDDA15E),
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
                                                           .fromSTEB(20.0, 24.0,
-                                                              20.0, 24.0),
+                                                          20.0, 24.0),
                                                   suffixIcon: InkWell(
                                                     onTap: () => setState(
                                                       () => _model
@@ -961,7 +1001,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                               .visibility_outlined
                                                           : Icons
                                                               .visibility_off_outlined,
-                                                      color: const Color(0xFFE5E0E0),
+                                                      color: const Color(
+                                                          0xFFE5E0E0),
                                                       size: 28.0,
                                                     ),
                                                   ),
@@ -975,8 +1016,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
+                                              padding:
+                                                  const EdgeInsetsDirectional
+                                                      .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -1011,7 +1053,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                           ),
                                                   enabledBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -1021,7 +1064,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -1031,7 +1075,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -1041,7 +1086,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -1050,11 +1096,12 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             33.0),
                                                   ),
                                                   filled: true,
-                                                  fillColor: const Color(0xFFDDA15E),
+                                                  fillColor:
+                                                      const Color(0xFFDDA15E),
                                                   contentPadding:
                                                       const EdgeInsetsDirectional
                                                           .fromSTEB(20.0, 24.0,
-                                                              20.0, 24.0),
+                                                          20.0, 24.0),
                                                   suffixIcon: InkWell(
                                                     onTap: () => setState(
                                                       () => _model
@@ -1070,7 +1117,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                               .visibility_outlined
                                                           : Icons
                                                               .visibility_off_outlined,
-                                                      color: const Color(0xFFE5E0E0),
+                                                      color: const Color(
+                                                          0xFFE5E0E0),
                                                       size: 28.0,
                                                     ),
                                                   ),
@@ -1084,11 +1132,13 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                               ),
                                             ),
                                             Align(
-                                              alignment: const AlignmentDirectional(
-                                                  0.0, 1.0),
+                                              alignment:
+                                                  const AlignmentDirectional(
+                                                      0.0, 1.0),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                padding:
+                                                    const EdgeInsetsDirectional
+                                                        .fromSTEB(
                                                         0.0, 24.0, 0.0, 24.0),
                                                 child: FFButtonWidget(
                                                   onPressed: () {
@@ -1100,13 +1150,14 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                     height: 50.0,
                                                     padding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
+                                                            .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
                                                     iconPadding:
                                                         const EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
-                                                    color: const Color(0xFF283618),
+                                                            .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                    color:
+                                                        const Color(0xFF283618),
                                                     textStyle:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -1119,7 +1170,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                                   .primaryBackground,
                                                             ),
                                                     elevation: 3.0,
-                                                    borderSide: const BorderSide(
+                                                    borderSide:
+                                                        const BorderSide(
                                                       color: Colors.transparent,
                                                       width: 1.0,
                                                     ),
@@ -1132,8 +1184,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                             ),
                                             Flexible(
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
-                                                    0.0, -1.0),
+                                                alignment:
+                                                    const AlignmentDirectional(
+                                                        0.0, -1.0),
                                                 child: RichText(
                                                   textScaleFactor:
                                                       MediaQuery.of(context)

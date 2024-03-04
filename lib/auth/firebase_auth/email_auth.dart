@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+/*import 'package:firebase_auth/firebase_auth.dart';
 
 Future<UserCredential?> emailSignInFunc(
   String email,
@@ -14,4 +14,4 @@ Future<UserCredential?> emailCreateAccountFunc(
     FirebaseAuth.instance.createUserWithEmailAndPassword(
       email: email.trim(),
       password: password,
-    );
+    );*/
