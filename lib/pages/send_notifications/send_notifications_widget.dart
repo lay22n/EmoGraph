@@ -84,7 +84,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
             ),
           ),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1200.0, 0.0),
+            padding:
+                const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1200.0, 0.0),
             child: Container(
               width: 0.0,
               height: 100.0,
@@ -92,14 +93,15 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                 color: Color(0xFF97A97C),
               ),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          0.0, 0.0, 0.0, 24.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -124,8 +126,9 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        33.0, 0.0, 0.0, 0.0),
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            33.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'EmoGraph',
                                       style: FlutterFlowTheme.of(context)
@@ -178,8 +181,9 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                   ),
                                   Expanded(
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          12.0, 0.0, 0.0, 0.0),
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              12.0, 0.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -197,9 +201,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                                 ),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 4.0, 0.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                             child: Text(
                                               'admin@gmail.com',
                                               style: FlutterFlowTheme.of(
@@ -230,8 +233,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          16.0, 0.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
@@ -275,8 +278,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          16.0, 0.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
@@ -321,8 +324,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          16.0, 0.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
@@ -367,8 +370,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
+                      padding: const EdgeInsetsDirectional.fromSTEB(
+                          16.0, 0.0, 16.0, 12.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
@@ -436,7 +439,7 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                   if ((Theme.of(context).brightness ==
                                           Brightness.light) ==
                                       true) {
-                                    setDarkModeSetting(
+                                    /* setDarkModeSetting(
                                         context, ThemeMode.light);
                                     if (animationsMap[
                                             'containerOnActionTriggerAnimation'] !=
@@ -445,9 +448,9 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                               'containerOnActionTriggerAnimation']!
                                           .controller
                                           .forward(from: 0.0);
-                                    }
+                                    }*/
                                   } else {
-                                    setDarkModeSetting(
+                                    /* setDarkModeSetting(
                                         context, ThemeMode.light);
                                     if (animationsMap[
                                             'containerOnActionTriggerAnimation'] !=
@@ -456,7 +459,7 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                               'containerOnActionTriggerAnimation']!
                                           .controller
                                           .reverse();
-                                    }
+                                    }*/
                                   }
                                 },
                                 child: Container(
@@ -473,15 +476,15 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                   child: Padding(
                                     padding: const EdgeInsets.all(2.0),
                                     child: Stack(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment:
+                                          const AlignmentDirectional(0.0, 0.0),
                                       children: [
                                         Align(
-                                          alignment:
-                                              const AlignmentDirectional(-0.9, 0.0),
+                                          alignment: const AlignmentDirectional(
+                                              -0.9, 0.0),
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    6.0, 0.0, 0.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(6.0, 0.0, 0.0, 0.0),
                                             child: Icon(
                                               Icons.wb_sunny_rounded,
                                               color:
@@ -492,12 +495,11 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                           ),
                                         ),
                                         Align(
-                                          alignment:
-                                              const AlignmentDirectional(1.0, 0.0),
+                                          alignment: const AlignmentDirectional(
+                                              1.0, 0.0),
                                           child: Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 6.0, 0.0),
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0.0, 0.0, 6.0, 0.0),
                                             child: Icon(
                                               Icons.mode_night_rounded,
                                               color:
@@ -508,8 +510,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                                           ),
                                         ),
                                         Align(
-                                          alignment:
-                                              const AlignmentDirectional(1.0, 0.0),
+                                          alignment: const AlignmentDirectional(
+                                              1.0, 0.0),
                                           child: Container(
                                             width: 36.0,
                                             height: 36.0,
@@ -552,7 +554,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
         Align(
           alignment: const AlignmentDirectional(0.0, -0.75),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(500.0, 0.0, 300.0, 0.0),
+            padding:
+                const EdgeInsetsDirectional.fromSTEB(500.0, 0.0, 300.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -572,14 +575,15 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
         Align(
           alignment: const AlignmentDirectional(0.0, -1.0),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(500.0, 200.0, 200.0, 0.0),
+            padding:
+                const EdgeInsetsDirectional.fromSTEB(500.0, 200.0, 200.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(80.0, 0.0, 200.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(
+                        80.0, 0.0, 200.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController,
                       focusNode: _model.textFieldFocusNode,
@@ -646,7 +650,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
         Align(
           alignment: const AlignmentDirectional(0.0, -1.0),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(600.0, 300.0, 400.0, 450.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(
+                600.0, 300.0, 400.0, 450.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,
@@ -670,7 +675,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
         Align(
           alignment: const AlignmentDirectional(0.0, -1.0),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(600.0, 400.0, 400.0, 460.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(
+                600.0, 400.0, 400.0, 460.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.start,

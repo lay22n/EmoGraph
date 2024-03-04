@@ -566,6 +566,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "timeago",
+      "rootUri": "file:///Users/razan/.pub-cache/hosted/pub.dev/timeago-3.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "typed_data",
       "rootUri": "file:///Users/razan/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
@@ -668,7 +674,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-03-04T07:26:04.782844Z",
+  "generated": "2024-03-04T07:29:29.286355Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }

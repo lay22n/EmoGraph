@@ -64,7 +64,8 @@ class _ResetWidgetState extends State<ResetWidget> {
             Align(
               alignment: const AlignmentDirectional(-1.0, -1.0),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(40.0, 40.0, 0.0, 0.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(40.0, 40.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -82,7 +83,7 @@ class _ResetWidgetState extends State<ResetWidget> {
                           size: 50.0,
                         ),
                         onPressed: () async {
-                          context.pop();
+                          // context.pop();
                         },
                       ),
                     ),
@@ -137,8 +138,8 @@ class _ResetWidgetState extends State<ResetWidget> {
             Align(
               alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(350.0, 40.0, 350.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(
+                    350.0, 40.0, 350.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -203,8 +204,9 @@ class _ResetWidgetState extends State<ResetWidget> {
                                 ),
                                 filled: true,
                                 fillColor: const Color(0xFFDDA15E),
-                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                                    24.0, 24.0, 20.0, 24.0),
+                                contentPadding:
+                                    const EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 24.0, 20.0, 24.0),
                               ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
                               textAlign: TextAlign.start,
@@ -225,8 +227,8 @@ class _ResetWidgetState extends State<ResetWidget> {
             Align(
               alignment: const AlignmentDirectional(0.0, -1.0),
               child: Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(350.0, 0.0, 350.0, 44.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(
+                    350.0, 0.0, 350.0, 44.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
