@@ -95,6 +95,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SendNotification',
           path: '/sendNotification',
           builder: (context, params) => const SendNotificationWidget(),
+        ),
+        FFRoute(
+          name: 'ResetPasswordPage',
+          path: '/resetPasswordPage',
+          builder: (context, params) => const ResetPasswordPageWidget(),
+        ),
+        FFRoute(
+          name: 'profile',
+          path: '/profile',
+          builder: (context, params) => const ProfileWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

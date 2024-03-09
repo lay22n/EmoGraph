@@ -79,7 +79,7 @@ class _ResetWidgetState extends State<ResetWidget> {
                         icon: Icon(
                           Icons.arrow_back_rounded,
                           color: FlutterFlowTheme.of(context).primaryText,
-                          size: 50.0,
+                          size: 30.0,
                         ),
                         onPressed: () async {
                           context.pop();

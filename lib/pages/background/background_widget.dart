@@ -524,9 +524,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                               Padding(
                                                 padding: const EdgeInsets.all(18.0),
                                                 child: RichText(
-                                                  textScaleFactor:
+                                                  textScaler:
                                                       MediaQuery.of(context)
-                                                          .textScaleFactor,
+                                                          .textScaler,
                                                   text: TextSpan(
                                                     children: [
                                                       TextSpan(
@@ -1135,9 +1135,9 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                 alignment: const AlignmentDirectional(
                                                     0.0, -1.0),
                                                 child: RichText(
-                                                  textScaleFactor:
+                                                  textScaler:
                                                       MediaQuery.of(context)
-                                                          .textScaleFactor,
+                                                          .textScaler,
                                                   text: TextSpan(
                                                     children: [
                                                       TextSpan(

@@ -11,4 +11,4 @@ PRODUCT_NAME = Test
 PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.test
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 Test. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2024 Test. All rights reserved.

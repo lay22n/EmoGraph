@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -47,8 +48,11 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
     super.initState();
     _model = createModel(context, () => SendNotificationsModel());
 
-    _model.textController ??= TextEditingController();
-    _model.textFieldFocusNode ??= FocusNode();
+    _model.textController1 ??= TextEditingController();
+    _model.textFieldFocusNode1 ??= FocusNode();
+
+    _model.textController2 ??= TextEditingController();
+    _model.textFieldFocusNode2 ??= FocusNode();
 
     setupAnimations(
       animationsMap.values.where((anim) =>
@@ -581,8 +585,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(80.0, 0.0, 200.0, 0.0),
                     child: TextFormField(
-                      controller: _model.textController,
-                      focusNode: _model.textFieldFocusNode,
+                      controller: _model.textController1,
+                      focusNode: _model.textFieldFocusNode1,
                       autofocus: true,
                       textInputAction: TextInputAction.search,
                       obscureText: false,
@@ -632,7 +636,7 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
                       style: FlutterFlowTheme.of(context).titleMedium,
                       cursorColor: const Color(0xFF283618),
                       validator:
-                          _model.textControllerValidator.asValidator(context),
+                          _model.textController1Validator.asValidator(context),
                       inputFormatters: [
                         FilteringTextInputFormatter.allow(RegExp('[a-zA-Z0-9]'))
                       ],
@@ -670,20 +674,110 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget>
         Align(
           alignment: const AlignmentDirectional(0.0, -1.0),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(600.0, 400.0, 400.0, 460.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(600.0, 400.0, 400.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 100.0,
-                  height: 100.0,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                Expanded(
+                  child: Align(
+                    alignment: const AlignmentDirectional(0.0, -1.0),
+                    child: Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+                      child: TextFormField(
+                        controller: _model.textController2,
+                        focusNode: _model.textFieldFocusNode2,
+                        autofocus: true,
+                        obscureText: false,
+                        decoration: InputDecoration(
+                          labelStyle: FlutterFlowTheme.of(context).labelMedium,
+                          alignLabelWithHint: true,
+                          hintText: 'Type the notification content',
+                          hintStyle:
+                              FlutterFlowTheme.of(context).titleMedium.override(
+                                    fontFamily: 'Readex Pro',
+                                    fontSize: 14.0,
+                                  ),
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).alternate,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: const BorderSide(
+                              color: Color(0xFF283618),
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                          errorBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                          focusedErrorBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: FlutterFlowTheme.of(context).error,
+                              width: 2.0,
+                            ),
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                          filled: true,
+                          fillColor: const Color(0xFFDDA15E),
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium,
+                        textAlign: TextAlign.start,
+                        maxLines: 8,
+                        maxLength: 200,
+                        validator: _model.textController2Validator
+                            .asValidator(context),
+                      ),
+                    ),
                   ),
                 ),
               ],
             ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsetsDirectional.fromSTEB(600.0, 600.0, 400.0, 0.0),
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              Align(
+                alignment: const AlignmentDirectional(-1.0, -1.0),
+                child: FFButtonWidget(
+                  onPressed: () async {
+                    context.pop();
+                  },
+                  text: 'Send',
+                  options: FFButtonOptions(
+                    width: 440.0,
+                    height: 40.0,
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: const Color(0xFF283618),
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3.0,
+                    borderSide: const BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(44.0),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ],
