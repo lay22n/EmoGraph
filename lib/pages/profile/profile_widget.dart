@@ -1,3 +1,4 @@
+import '/components/profilecomponent_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -40,11 +41,12 @@ class _ProfileWidgetState extends State<ProfileWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: const SafeArea(
+        body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [],
+          child: wrapWithModel(
+            model: _model.profilecomponentModel,
+            updateCallback: () => setState(() {}),
+            child: const ProfilecomponentWidget(),
           ),
         ),
       ),
