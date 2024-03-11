@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:test/index.dart';
+import 'package:test/pages/background/background_widget.dart';
 import 'package:test/pages/home_page/home_page_widget.dart';
 import 'package:test/pages/rest_password/reset_password_page_widget.dart';
 import 'package:test/pages/send_notifications/send_notifications_widget.dart';
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       // Set HomePageWidget as the initial route
-      home: ResetPasswordPageWidget(), // Directly use HomePageWidget here.
+      home: SendNotificationWidget(), // Directly use HomePageWidget here.
     );
   }
 }

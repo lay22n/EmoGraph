@@ -73,7 +73,7 @@ class _ResetWidgetState extends State<ResetWidget> {
                     Align(
                       alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: FlutterFlowIconButton(
-                        borderColor: Colors.transparent,
+                        // borderColor: Colors.transparent,
                         borderRadius: 30.0,
                         borderWidth: 1.0,
                         buttonSize: 90.0,
@@ -97,20 +97,21 @@ class _ResetWidgetState extends State<ResetWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -1.0),
+                  alignment: AlignmentDirectional(0, -1),
                   child: Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: EdgeInsets.all(20),
                     child: Text(
                       'Reset Your Password',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            fontSize: 48.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 48,
                             fontWeight: FontWeight.bold,
                           ),
                     ),
                   ),
-                ),
+                )
               ],
             ),
             Align(

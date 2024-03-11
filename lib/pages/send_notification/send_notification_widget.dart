@@ -1,7 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import '/pages/send_notifications/send_notifications_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
 import 'send_notification_model.dart';
 export 'send_notification_model.dart';
 
@@ -46,7 +50,7 @@ class _SendNotificationWidgetState extends State<SendNotificationWidget> {
           child: wrapWithModel(
             model: _model.sendNotificationsModel,
             updateCallback: () => setState(() {}),
-            child: const SendNotificationsWidget(),
+            child: SendNotificationsWidget(),
           ),
         ),
       ),

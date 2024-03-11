@@ -92,14 +92,6 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                   constraints: const BoxConstraints(
                     maxWidth: 600.0,
                   ),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.fitWidth,
-                      image: Image.asset(
-                        'assets/images/page_bg_transparent@2x.png',
-                      ).image,
-                    ),
-                  ),
                   child: Padding(
                     padding: const EdgeInsetsDirectional.fromSTEB(
                         0.0, 70.0, 0.0, 0.0),
@@ -112,16 +104,6 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              if (Theme.of(context).brightness ==
-                                  Brightness.dark)
-                                Image.asset(
-                                  'assets/images/health-ai_logoVert.png',
-                                  width: 200.0,
-                                  height: 130.0,
-                                  fit: BoxFit.fitHeight,
-                                ),
-                            ],
                           ),
                         ),
                         Padding(
@@ -465,8 +447,8 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                       elevation: 0.0,
                                                       borderSide:
                                                           const BorderSide(
-                                                        color:
-                                                            Colors.transparent,
+                                                        color: Color.fromARGB(
+                                                            255, 255, 255, 255),
                                                         width: 1.0,
                                                       ),
                                                       borderRadius:
@@ -512,17 +494,14 @@ class _BackgroundWidgetState extends State<BackgroundWidget>
                                                             0.0, 0.0, 0.0, 0.0),
                                                     color:
                                                         const Color(0xFF283618),
-                                                    textStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .titleSmall
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Readex Pro',
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primaryBackground,
-                                                            ),
+                                                    textStyle: FlutterFlowTheme
+                                                            .of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Readex Pro',
+                                                          color: Colors.white,
+                                                        ),
                                                     elevation: 3.0,
                                                     borderSide:
                                                         const BorderSide(
