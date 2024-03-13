@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:test/index.dart';
+import 'package:test/pages/analytics_screen.dart';
 import 'package:test/pages/background/background_widget.dart';
 import 'package:test/pages/home_page/home_page_widget.dart';
 import 'package:test/pages/profile/profile_widget.dart';
@@ -14,7 +15,9 @@ import 'backend/firebase/firebase_config.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/nav/nav.dart';
-import 'pages/home_page/home_page_widget.dart'; // Ensure this import is correct.
+import 'pages/calendar_screen.dart';
+import 'pages/home_page/home_page_widget.dart';
+import 'pages/profile/graphs_screen.dart'; // Ensure this import is correct.
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,7 +48,8 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       // Set HomePageWidget as the initial route
-      home: SendNotificationWidget(), // Directly use HomePageWidget here.
+      home:
+          GraphicalRepresentationScreen(), // Directly use HomePageWidget here.
     );
   }
 }
