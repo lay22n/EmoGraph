@@ -64,7 +64,8 @@ class _ResetWidgetState extends State<ResetWidget> {
             Align(
               alignment: const AlignmentDirectional(-1.0, -1.0),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(40.0, 40.0, 0.0, 0.0),
+                padding:
+                    const EdgeInsetsDirectional.fromSTEB(40.0, 40.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -72,17 +73,17 @@ class _ResetWidgetState extends State<ResetWidget> {
                     Align(
                       alignment: const AlignmentDirectional(-1.0, -1.0),
                       child: FlutterFlowIconButton(
-                        borderColor: Colors.transparent,
+                        // borderColor: Colors.transparent,
                         borderRadius: 30.0,
                         borderWidth: 1.0,
                         buttonSize: 90.0,
                         icon: Icon(
                           Icons.arrow_back_rounded,
                           color: FlutterFlowTheme.of(context).primaryText,
-                          size: 30.0,
+                          size: 50.0,
                         ),
                         onPressed: () async {
-                          context.pop();
+                          // context.pop();
                         },
                       ),
                     ),
@@ -96,20 +97,21 @@ class _ResetWidgetState extends State<ResetWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.0, -1.0),
+                  alignment: AlignmentDirectional(0, -1),
                   child: Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: EdgeInsets.all(20),
                     child: Text(
                       'Reset Your Password',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            fontSize: 48.0,
+                            color: Color.fromARGB(255, 0, 0, 0),
+                            fontSize: 48,
                             fontWeight: FontWeight.bold,
                           ),
                     ),
                   ),
-                ),
+                )
               ],
             ),
             Align(
@@ -137,8 +139,8 @@ class _ResetWidgetState extends State<ResetWidget> {
             Align(
               alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(350.0, 40.0, 350.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(
+                    350.0, 40.0, 350.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -169,42 +171,29 @@ class _ResetWidgetState extends State<ResetWidget> {
                                     .labelMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Colors.white,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0xFF606C38),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 filled: true,
                                 fillColor: const Color(0xFFDDA15E),
-                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                                    24.0, 24.0, 20.0, 24.0),
+                                contentPadding:
+                                    const EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 24.0, 20.0, 24.0),
                               ),
                               style: FlutterFlowTheme.of(context).bodyMedium,
                               textAlign: TextAlign.start,
@@ -225,8 +214,8 @@ class _ResetWidgetState extends State<ResetWidget> {
             Align(
               alignment: const AlignmentDirectional(0.0, -1.0),
               child: Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(350.0, 0.0, 350.0, 44.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(
+                    350.0, 0.0, 350.0, 44.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [

@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+/*import 'package:firebase_auth/firebase_auth.dart';
 import 'package:rxdart/rxdart.dart';
 
 import '../base_auth_user_provider.dart';
@@ -67,4 +67,4 @@ Stream<BaseAuthUser> testFirebaseUserStream() => FirebaseAuth.instance
         currentUser = TestFirebaseUser(user);
         return currentUser!;
       },
-    );
+    );*/
