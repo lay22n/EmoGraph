@@ -4,6 +4,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:test/index.dart';
 import 'package:test/pages/background/background_widget.dart';
 import 'package:test/pages/home_page/home_page_widget.dart';
+import 'package:test/pages/profile/profile_widget.dart';
 import 'package:test/pages/rest_password/reset_password_page_widget.dart';
 import 'package:test/pages/send_notifications/send_notifications_widget.dart';
 import 'auth/firebase_auth/firebase_user_provider.dart';

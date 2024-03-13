@@ -171,37 +171,23 @@ class _ResetWidgetState extends State<ResetWidget> {
                                     .labelMedium
                                     .override(
                                       fontFamily: 'Readex Pro',
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Colors.white,
                                     ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color:
-                                        FlutterFlowTheme.of(context).alternate,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0xFF606C38),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(44.0),
+                                  borderSide: BorderSide.none, // Removed border
+                                  borderRadius: BorderRadius.circular(33.0),
                                 ),
                                 filled: true,
                                 fillColor: const Color(0xFFDDA15E),

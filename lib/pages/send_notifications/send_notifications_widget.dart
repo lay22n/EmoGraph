@@ -63,7 +63,7 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget> {
                 'assets/images/Background.jpg',
               ).image,
             ),
-          ),
+          ), // Main content
           child: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0, 0, 1200, 0),
             child: Container(
@@ -399,6 +399,7 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget> {
                   'Send a notification ',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 48,
                         fontWeight: FontWeight.bold,
                       ),
@@ -495,7 +496,8 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget> {
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
-                          fontSize: 20,
+                          fontSize: 18,
+                          color: Color.fromARGB(255, 0, 0, 0),
                           fontWeight: FontWeight.w600,
                         ),
                   ),
@@ -561,6 +563,7 @@ class _SendNotificationsWidgetState extends State<SendNotificationsWidget> {
                           ),
                           filled: true,
                           fillColor: Color(0xFFDDA15E),
+                          counterStyle: TextStyle(color: Color(0xAD5C5A5A)),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium,
                         textAlign: TextAlign.start,
