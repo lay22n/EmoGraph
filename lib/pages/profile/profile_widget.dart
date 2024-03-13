@@ -1,3 +1,5 @@
+import 'package:test/components/profilecomponent_model.dart';
+
 import '/components/profilecomponent_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';

@@ -1,4 +1,4 @@
-class AuthUserInfo {
+/*class AuthUserInfo {
   const AuthUserInfo({
     this.uid,
     this.email,
@@ -34,3 +34,4 @@ abstract class BaseAuthUser {
 
 BaseAuthUser? currentUser;
 bool get loggedIn => currentUser?.loggedIn ?? false;
+*/

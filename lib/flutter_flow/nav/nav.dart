@@ -20,8 +20,8 @@ class AppStateNotifier extends ChangeNotifier {
   static AppStateNotifier? _instance;
   static AppStateNotifier get instance => _instance ??= AppStateNotifier._();
 
-  BaseAuthUser? initialUser;
-  BaseAuthUser? user;
+  //BaseAuthUser? initialUser;
+  //BaseAuthUser? user;
   bool showSplashImage = true;
   String? _redirectLocation;
 
@@ -32,10 +32,10 @@ class AppStateNotifier extends ChangeNotifier {
   /// Otherwise, this will trigger a refresh and interrupt the action(s).
   bool notifyOnAuthChange = true;
 
-  bool get loading => user == null || showSplashImage;
-  bool get loggedIn => user?.loggedIn ?? false;
-  bool get initiallyLoggedIn => initialUser?.loggedIn ?? false;
-  bool get shouldRedirect => loggedIn && _redirectLocation != null;
+  //bool get loading => user == null || showSplashImage;
+  //bool get loggedIn => user?.loggedIn ?? false;
+  //bool get initiallyLoggedIn => initialUser?.loggedIn ?? false;
+  //bool get shouldRedirect => loggedIn && _redirectLocation != null;
 
   String getRedirectLocation() => _redirectLocation!;
   bool hasRedirect() => _redirectLocation != null;
@@ -46,7 +46,7 @@ class AppStateNotifier extends ChangeNotifier {
   /// to perform subsequent actions (such as navigation) afterwards.
   void updateNotifyOnAuthChange(bool notify) => notifyOnAuthChange = notify;
 
-  void update(BaseAuthUser newUser) {
+  /* void update(BaseAuthUser newUser) {
     final shouldUpdate =
         user?.uid == null || newUser.uid == null || user?.uid != newUser.uid;
     initialUser ??= newUser;
@@ -71,8 +71,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const RestPasswordWidget() : const HomePageWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? const RestPasswordWidget()
+          : const HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -95,16 +96,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SendNotification',
           path: '/sendNotification',
           builder: (context, params) => const SendNotificationWidget(),
-        ),
-        FFRoute(
-          name: 'ResetPasswordPage',
-          path: '/resetPasswordPage',
-          builder: (context, params) => const ResetPasswordPageWidget(),
-        ),
-        FFRoute(
-          name: 'profile',
-          path: '/profile',
-          builder: (context, params) => const ProfileWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -221,10 +212,11 @@ class FFParameters {
 
   dynamic getParam<T>(
     String paramName,
-    ParamType type, [
-    bool isList = false,
+    //ParamType type, [
+    // bool isList = false,
     List<String>? collectionNamePath,
-  ]) {
+    //]
+  ) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
     }
@@ -237,8 +229,8 @@ class FFParameters {
       return param;
     }
     // Return serialized value.
-    return deserializeParam<T>(param, type, isList,
-        collectionNamePath: collectionNamePath);
+    // return deserializeParam<T>(param, type, isList,
+    //      collectionNamePath: collectionNamePath);
   }
 }
 
@@ -338,7 +330,8 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() =>
+      const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {
@@ -358,5 +351,5 @@ class RootPageContext {
   static Widget wrap(Widget child, {String? errorRoute}) => Provider.value(
         value: RootPageContext(true, errorRoute),
         child: child,
-      );
+      );*/
 }

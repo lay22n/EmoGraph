@@ -1,30 +1,31 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/pages/send_notifications/send_notifications_widget.dart';
+import '/pages/reset/reset_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-import 'send_notification_model.dart';
-export 'send_notification_model.dart';
+import 'reset_password_page_model.dart';
+export 'reset_password_page_model.dart';
 
-class SendNotificationWidget extends StatefulWidget {
-  const SendNotificationWidget({super.key});
+class ResetPasswordPageWidget extends StatefulWidget {
+  const ResetPasswordPageWidget({super.key});
 
   @override
-  State<SendNotificationWidget> createState() => _SendNotificationWidgetState();
+  State<ResetPasswordPageWidget> createState() =>
+      _ResetPasswordPageWidgetState();
 }
 
-class _SendNotificationWidgetState extends State<SendNotificationWidget> {
-  late SendNotificationModel _model;
+class _ResetPasswordPageWidgetState extends State<ResetPasswordPageWidget> {
+  late ResetPasswordPageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SendNotificationModel());
+    _model = createModel(context, () => ResetPasswordPageModel());
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -48,9 +49,9 @@ class _SendNotificationWidgetState extends State<SendNotificationWidget> {
         body: SafeArea(
           top: true,
           child: wrapWithModel(
-            model: _model.sendNotificationsModel,
+            model: _model.resetModel,
             updateCallback: () => setState(() {}),
-            child: SendNotificationsWidget(),
+            child: ResetWidget(),
           ),
         ),
       ),
