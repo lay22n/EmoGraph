@@ -110,6 +110,16 @@ flutter:
     - assets/lottie_animations/
     - assets/rive_animations/
     - assets/pdfs/
+    - assets/BGgreen.PNG
+    - assets/falling.PNG
+    - assets/Stable.PNG
+    - assets/rising.PNG
+    - assets/smileyfaceBW.png
+    - assets/smileyface.png
+    - assets/sadBW.png
+    - assets/sad.png
+    - assets/employeeDevelopment.jpg
+    - assets/stressManagment.PNG
 
   
   # An image asset can refer to one or more resolution-specific "variants", see
